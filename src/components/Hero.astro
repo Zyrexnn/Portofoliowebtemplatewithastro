@@ -1,0 +1,153 @@
+---
+---
+
+<section id="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm [Your Name]</h1>
+    <p class="subtitle">Full Stack Developer | UI/UX Enthusiast | Problem Solver</p>
+    <p class="description">
+      I create beautiful, functional web applications that solve real-world problems.
+      Passionate about clean code, user experience, and continuous learning.
+    </p>
+    <div class="cta-buttons">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="/placeholder-avatar.jpg" alt="Profile Picture" />
+  </div>
+</section>
+
+<style>
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background: #ffffff;
+    color: #1a1a1a;
+    position: relative;
+  }
+
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #666666;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+    max-width: 500px;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.875rem 2rem;
+    border: 1px solid #1a1a1a;
+    background: transparent;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    transition: all 0.2s ease;
+  }
+
+  .btn:hover {
+    background: #1a1a1a;
+    color: #ffffff;
+  }
+
+  .btn-primary {
+    background: #1a1a1a;
+    color: #ffffff;
+  }
+
+  .btn-primary:hover {
+    background: #333333;
+    color: #ffffff;
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (max-width: 768px) {
+    #hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-image img {
+      width: 200px;
+      height: 200px;
+      margin-top: 2rem;
+    }
+  }
+</style>

@@ -1,0 +1,133 @@
+---
+---
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm a passionate full-stack developer with a love for creating digital experiences
+          that make a difference. With several years of experience in web development,
+          I specialize in building scalable, user-friendly applications using modern technologies.
+        </p>
+        <p>
+          My journey in tech started with curiosity and has evolved into a career where I
+          continuously learn and adapt to new technologies. I believe in writing clean,
+          maintainable code and following best practices to deliver high-quality solutions.
+        </p>
+        <p>
+          When I'm not coding, you can find me exploring new technologies, contributing to
+          open-source projects, or sharing knowledge with the developer community.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <h3>5+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3>50+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+          <h3>20+</h3>
+          <p>Happy Clients</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #about {
+    padding: 6rem 2rem;
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #1a1a1a;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 1.8rem;
+    text-align: justify;
+  }
+
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+  }
+
+  .stat h3 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+
+  .stat p {
+    color: #666666;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .about-stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat {
+      padding: 1rem;
+    }
+
+    .stat h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-stats {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
