@@ -1,14 +1,18 @@
-# Astro Starter Kit: Basics
+# Tremendous Series - Astro Portfolio Template
 
 ```sh
-npm create astro@latest -- --template basics
+# Clone this portfolio template
+git clone <https://github.com/Zyrexnn/Portofoliowebtemplatewithastro.git>
+cd tremendous-series
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> 🧑‍🚀 **Ready to customize?** This is a portfolio template built with Astro. Edit the components to personalize your site!
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+Inside of your Astro portfolio project, you'll see the following folders and files:
 
 ```text
 /
@@ -16,14 +20,24 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src
 │   ├── assets
-│   │   └── astro.svg
+│   │   ├── astro.svg
+│   │   └── background.svg
 │   ├── components
+│   │   ├── About.astro
+│   │   ├── Contact.astro
+│   │   ├── Hero.astro
+│   │   ├── Projects.astro
+│   │   ├── Skills.astro
 │   │   └── Welcome.astro
 │   ├── layouts
 │   │   └── Layout.astro
 │   └── pages
 │       └── index.astro
-└── package.json
+├── astro.config.mjs
+├── package.json
+├── tsconfig.json
+├── .gitignore
+└── .vscode/
 ```
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
